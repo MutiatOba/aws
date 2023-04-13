@@ -37,12 +37,11 @@ Make sure you enter in your own email address. The above command will create pub
 ```
 Press enter when prompted to enter in your password. If your keys have been properly created you should see the following image.
 
-![img.png](img.png)
 
 ### 3. Associate your SSH keys with GitHub accoun
 
 Head over to github.com and login. Click on your profile, settings and on the lef-hand side click on "SSH and GPG Keys". Then click on "New SSH Keys"
-![img_1.png](img_1.png)
+
 
 You will be prompted to include a title and in box titled "Key" you need to insert your public key. To access your public key, head back to your Git Bash App. Type the following command to access the relevant file:
 
