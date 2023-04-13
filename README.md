@@ -80,3 +80,93 @@ git remote add origin git@github.com:<name of  file>.git
 git push -u origin main
 ```
 
+# How to set up an EC2 instance
+
+Here are the steps to set up an EC2 instance on AWS.
+
+1. Basic startup steps
+
+First head over to the AWS Management Console and login.
+
+In the search bar, type in EC2 and then select the EC2 option. 
+![img.png](img.png)
+
+Click on the 'Launch Instance' button and select 'Launch Instance'
+![img_1.png](img_1.png)
+
+2. Select the feature for your EC2 instance
+
+First you input in a name for your EC2 instance
+![img_2.png](img_2.png)
+
+Then you select an AMI - chose ubuntu
+![img_3.png](img_3.png)
+
+Leave the instance type as t2.micro
+
+Select a keypair - if you dont have one then create one.
+
+Under 'Network Settings' makesure SSH traffic is from your specific IP address and select the checkbox to allow HTTp traffic from the internet.
+
+![img_4.png](img_4.png)
+
+Whilst in the 'Network Settings' section, click edit and ensure "Auto-assign IP" is set to enable.  
+![img_5.png](img_5.png)
+
+keep the other features as is for now and the click 'Launch Instance'.
+
+3. Launch Instance
+
+Once your ec2 instance has been intilized then select the check box and press connect. 
+
+![img_6.png](img_6.png)
+
+Make sure you're in the "SSH Client" tab and then head over to Git Bash App.
+
+When in Git Bash, go to the folder where your .pem file is saved, then follow the instructions from aws.
+
+![img_7.png](img_7.png)
+
+# How to amend a security group in AWS
+
+Once you have launched your EC2 instance with a security group you can, if like, amend the security group.
+
+To do this, check the box for the instance. In the pannel underneath, navigate to the security tab.
+
+![img_8.png](img_8.png)
+Once on the security tab, click on the link to the security group.
+
+![img_9.png](img_9.png)
+
+Then click on "Edit Inbound Rules"
+
+![img_10.png](img_10.png)
+
+At this point you can add new inboud rules and/or delete rules. Once the necessary changes have been made, click on "Save Rules"
+
+![img_11.png](img_11.png)
+
+
+# Commonly used Linux commands
+
+Here are a list of Linux commands
+
+* ```ls``` - list all files in current directory 
+* ```ls -a``` - hidden files
+* ```whoami``` - tells you operating system
+* ```pwd``` - tells you current location
+* ```uname``` - gives us username: Linux
+* ```uname -a```  - gives us all the information
+* ```mkdir <name> ```- creates a directory
+* ```cd ..``` - moves one directory back
+* ```touch <filename>``` - create file
+* ```nano <filename>``` - text editor
+* ```cat <filename>``` - reveal content of file
+* ```cp <filename> <where to go>``` - copy
+* ```rm <filename>``` - delete file
+* ```mv <filename> <folder>``` - cut and move file
+* ```ll``` - shows permission of file
+* ```top``` - list all the processes 
+* ```Chmod 700 <filename>``` - changes the right of the owner to rwx 
+* ```history``` - gives you the list of commands we used 
+* ```rm -rf <name of file>``` - to remove file 
