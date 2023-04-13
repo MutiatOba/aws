@@ -170,3 +170,37 @@ Here are a list of Linux commands
 * ```Chmod 700 <filename>``` - changes the right of the owner to rwx 
 * ```history``` - gives you the list of commands we used 
 * ```rm -rf <name of file>``` - to remove file 
+* ```head -1 <filename>``` - first line in file 
+* ```tail -2 <filename>``` - last two file
+* ```sort <filename> - sort out file name
+* ps aux - shows all appliication processing 
+* cat <filename> | grep <word> - search for word in file
+* ls | tail -1 - list last file created
+* ps aux | grep bash - process that are running using bash 
+* sudo su - to use root user (to come out of it type exit)
+* sudo apt update -y - downloads to new things
+* sudo apt upgrade - switches to using the new things 
+* sudo apt install nginx -y - installs nginx (which is a webserver)
+* sudo systemctl status nginx - shows us current status of nginx
+* sudo systemctl stop nginx - stops nginx 
+* sudo systemctl stop nginx - starts nginx 
+* sudo systemctl enable nginx  - everytime the system started it will run
+* sudo nano <name of file> - to create a file
+
+To automate the process: 
+bash scripting - when file is created it should end with .sh
+```
+#!/bin/bash
+# update
+sudo apt update -y
+# upgrade
+sudo apt upgrade -y
+# install Nginx
+sudo apt install nginx -y
+# restart Nginx
+sudo systemctl restart nginx
+# enable Nginx
+sudo systemctl enable nginx
+```
+once script is run: sudo chmod +x <filename>
+to run the script: sudo ./<name of file>
