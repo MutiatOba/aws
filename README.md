@@ -246,3 +246,38 @@ To amend permissions, you need to go to the IAM section of aws - this can be don
 Under "Access Management" you can check users' permissions, create user groups (gives permissions to a group of people all at once) and/ roles.
 
 One way of creating permissions is by creating policies which can be attached to the relevant user.
+
+### user data
+
+- user data: allows us to inject config we want on the instance initially. once it is laucned everything is set up. This helps to automate the process. 
+
+- lanch instance normal way - except ubder advanced details go to user data
+
+- once instance is launched we can use the public IP address.
+
+- the user data only runs when the instance is lauched/ rebooted 
+
+### linux
+
+printenv - enviroment variable; shows all enviroments 
+printenv pwd - checks if the pwd enviroment exists [if it exists then should see an outcome]
+env - is another way to see the envirmenet 
+MY_NAME=mutiat (this is example variable)
+echo $MY_NAME - gives output of variable 
+export LAST_NAME=obanigba - create an enviroment variable (type 'env' to find the enviroment OR printenv LAST_NAME)
+
+### What is enviroment variable and how do we use it?
+
+The export command creates an enviroment but once you leave the enviroment it is gone.
+
+to make enviroment persistent:
+
+sudo nano .bashrc - update this file with the enviroment variable
+add the variable (export name=mutiat) to the bottom of the .bashrc
+source .bashrc - it refreshes the file
+printenv name - shows that it has been added to enviroments 
+
+
+The enviroment variable doesnt work in user data.
+
+![img_13.png](img_13.png)
