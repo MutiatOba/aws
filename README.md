@@ -259,12 +259,12 @@ One way of creating permissions is by creating policies which can be attached to
 
 ### linux
 
-printenv - enviroment variable; shows all enviroments 
-printenv pwd - checks if the pwd enviroment exists [if it exists then should see an outcome]
-env - is another way to see the envirmenet 
-MY_NAME=mutiat (this is example variable)
-echo $MY_NAME - gives output of variable 
-export LAST_NAME=obanigba - create an enviroment variable (type 'env' to find the enviroment OR printenv LAST_NAME)
+- ```printenv``` - enviroment variable; shows all enviroments 
+- ``` printenv pwd ``` - checks if the pwd enviroment exists [if it exists then should see an outcome]
+- ``` env ``` - is another way to see the envirmenet 
+- ``` MY_NAME=mutiat``` (this is example variable)
+- ```echo $MY_NAME``` - gives output of variable 
+- ```export LAST_NAME=obanigba``` - create an enviroment variable (type 'env' to find the enviroment OR printenv LAST_NAME)
 
 ### What is enviroment variable and how do we use it?
 
@@ -272,10 +272,10 @@ The export command creates an enviroment but once you leave the enviroment it is
 
 to make enviroment persistent:
 
-sudo nano .bashrc - update this file with the enviroment variable
-add the variable (export name=mutiat) to the bottom of the .bashrc
-source .bashrc - it refreshes the file
-printenv name - shows that it has been added to enviroments 
+- ```sudo nano .bashrc``` - update this file with the enviroment variable
+- add the variable (export name=mutiat) to the bottom of the .bashrc
+- ``` source .bashrc``` - it refreshes the file
+- ```printenv name``` - shows that it has been added to enviroments 
 
 
 The enviroment variable doesnt work in user data.
