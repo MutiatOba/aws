@@ -55,7 +55,7 @@ Copy the long public key from the file and paste it in the box on GitHub. Once d
 Type the following commands in your Git Bash App:
 
 ```commandline
-eval ssh-agent -s
+eval 'ssh-agent -s'
 ssh-add <name>-github-key
 ssh -T git@github.com
 ```
