@@ -81,6 +81,18 @@ git push -u origin main
 
 # How to set up an EC2 instance
 
+EC2 = elastic compute cloud = infrastrucure as a service. can rent virtual machines ec2.
+operating system
+
+need to onfigure the following:
+- operating system: mac, linux, windows
+- chose hom mucn compute power
+- chose how much RAM
+- chose how much storage
+- network card
+- firewalls
+- boostrap scipt: ec2 user data [launch command when instance starts and only runs once]
+
 Here are the steps to set up an EC2 instance on AWS.
 
 1. Basic startup steps
