@@ -95,6 +95,12 @@ need to onfigure the following:
 
 We will need to create a key pair if we are going to use ssh to access out instance. the key pair type is RSA and teh private key file format is .pem. A key pair, consisting of a public key and a private key, is a set of security credentials that you use to prove your identity when connecting to an Amazon EC2 instance. Amazon EC2 stores the public key on your instance, and you store the private key. For Linux instances, the private key allows you to securely SSH into your instance.
 
+Sorting out ssh access:
+download the .pem file
+save .pem file in the .ssh folder
+cd into the .ssh folder (where pem file is kept)
+chmod 0400 <name of pem file> 
+
 Here are the steps to set up an EC2 instance on AWS.
 
 1. Basic startup steps
