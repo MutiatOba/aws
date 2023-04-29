@@ -82,7 +82,7 @@ git push -u origin main
 # How to set up an EC2 instance
 
 EC2 = elastic compute cloud = infrastrucure as a service. can rent virtual machines ec2.
-operating system
+
 
 need to onfigure the following:
 - operating system: mac, linux, windows
@@ -92,6 +92,8 @@ need to onfigure the following:
 - network card
 - firewalls
 - boostrap scipt: ec2 user data [launch command when instance starts and only runs once]
+
+We will need to create a key pair if we are going to use ssh to access out instance. the key pair type is RSA and teh private key file format is .pem. A key pair, consisting of a public key and a private key, is a set of security credentials that you use to prove your identity when connecting to an Amazon EC2 instance. Amazon EC2 stores the public key on your instance, and you store the private key. For Linux instances, the private key allows you to securely SSH into your instance.
 
 Here are the steps to set up an EC2 instance on AWS.
 
